@@ -262,10 +262,6 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('createDefaultTemplate', function () {
-        grunt.file.write('.tmp/scripts/templates.js', 'this.JST = this.JST || {};');
-    });
-
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
             return grunt.task.run(['build', 'open:server', 'connect:dist:keepalive']);
@@ -274,7 +270,6 @@ module.exports = function (grunt) {
         if (target === 'test') {
             return grunt.task.run([
                 'clean:server',
-                'createDefaultTemplate',
                 'handlebars',
                 'connect:test',
                 'open:test',
@@ -284,7 +279,6 @@ module.exports = function (grunt) {
 
         grunt.task.run([
             'clean:server',
-            'createDefaultTemplate',
             'handlebars',
             'connect:livereload',
             'open:server',
@@ -296,7 +290,6 @@ module.exports = function (grunt) {
         isConnected = Boolean(isConnected);
         var testTasks = [
                 'clean:server',
-                'createDefaultTemplate',
                 'handlebars',
                 'connect:test',
                 'mocha',
@@ -314,7 +307,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
-        'createDefaultTemplate',
         'handlebars',
         'useminPrepare',
         'requirejs',
