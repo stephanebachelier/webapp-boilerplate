@@ -41,15 +41,15 @@ module.exports = function (grunt) {
                     '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
-                    '<%= yeoman.app %>/scripts/templates/*.{ejs,mustache,hbs}',
+                    '<%= yeoman.app %>/scripts/templates/{,*/}*.hbs',
                     'test/spec/**/*.js'
                 ]
             },
-            jst: {
+            handlebars: {
                 files: [
-                    '<%= yeoman.app %>/scripts/templates/*.ejs'
+                    '<%= yeoman.app %>/scripts/templates/**/*.hbs'
                 ],
-                tasks: ['jst']
+                tasks: ['handlebars']
             },
             test: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.js', 'test/spec/**/*.js'],
@@ -227,13 +227,24 @@ module.exports = function (grunt) {
                 rjsConfig: '<%= yeoman.app %>/scripts/main.js'
             }
         },
-        jst: {
-            options: {
-                amd: true
-            },
+        handlebars: {
             compile: {
+                options: {
+                    amd: true,
+                    namespace: 'templates',
+                    processName: function(filePath) {
+                        var matches = filePath.match(new RegExp(yeomanConfig.app+ '\/scripts\/templates\/(.*).hbs'));
+                        return matches ? matches[1] : filePath;
+                    },
+                    processContent: function(content, filepath) {
+                      content = content.replace(/^[\x20\t]+/mg, '').replace(/[\x20\t]+$/mg, '');
+                      content = content.replace(/^[\r\n]+/, '').replace(/[\r\n]*$/, '');
+                      content = content.replace(/\n/g, '');
+                      return content;
+                    }
+                },
                 files: {
-                    '.tmp/scripts/templates.js': ['<%= yeoman.app %>/scripts/templates/*.ejs']
+                    '.tmp/scripts/templates.js': ['<%= yeoman.app %>/scripts/templates/**/*.hbs']
                 }
             }
         },
@@ -269,7 +280,7 @@ module.exports = function (grunt) {
             return grunt.task.run([
                 'clean:server',
                 'createDefaultTemplate',
-                'jst',
+                'handlebars',
                 'connect:test',
                 'open:test',
                 'watch:livereload'
@@ -279,7 +290,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'createDefaultTemplate',
-            'jst',
+            'handlebars',
             'connect:livereload',
             'open:server',
             'watch'
@@ -291,7 +302,7 @@ module.exports = function (grunt) {
         var testTasks = [
                 'clean:server',
                 'createDefaultTemplate',
-                'jst',
+                'handlebars',
                 'connect:test',
                 'mocha',
                 'watch:test'
@@ -309,7 +320,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'createDefaultTemplate',
-        'jst',
+        'handlebars',
         'useminPrepare',
         'requirejs',
         'imagemin',
