@@ -51,7 +51,7 @@ module.exports = function (grunt) {
       },
       code: {
         files: ['test/spec/**/*.js'],
-        tasks: ['jshint:code']
+        tasks: ['lint-code']
       },
       handlebars: {
         files: [
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
       },
       test: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js', 'test/spec/**/*.js'],
-        tasks: ['jshint:code', 'jshint:test', 'test:true']
+        tasks: ['lint-code', 'lint-test', 'test:true']
       }
     },
     connect: {
@@ -130,6 +130,10 @@ module.exports = function (grunt) {
       test: {
         src: ['test/spec/{,*/}*.js']
       }
+    },
+    jscs: {
+      code: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+      test: ['test/spec/{,*/}*.js']
     },
     mocha: {
       all: {
@@ -332,8 +336,12 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'jshint',
+    'lint-code',
+    'lint-test',
     'test',
     'build'
   ]);
+
+  grunt.registerTask('lint-code', ['jshint:code', 'jscs:code']);
+  grunt.registerTask('lint-test', ['jshint:test', 'jscs:test']);
 };

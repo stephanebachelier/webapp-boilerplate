@@ -11,12 +11,17 @@
   "latedef": true,
   "newcap": true,
   "noarg": true,
+  "noempty": true,
+  "nonew": true,
+  "plusplus": true,
   "quotmark": "single",
   "regexp": true,
   "undef": true,
   "unused": true,
   "strict": true,
+  "maxdepth": 3,
   "trailing": true,
   "smarttabs": true,
+  "onevar": true,
   "jquery": true
 }
