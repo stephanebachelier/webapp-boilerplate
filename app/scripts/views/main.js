@@ -1,3 +1,6 @@
+/*global define*/
+'use strict';
+
 define([
   'backbone',
   'templates'
@@ -11,4 +14,4 @@ define([
       return this;
     }
   });
-})
+});
