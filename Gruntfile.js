@@ -45,6 +45,10 @@ module.exports = function (grunt) {
                     'test/spec/**/*.js'
                 ]
             },
+            gruntfile: {
+                files: '<%= jshint.gruntfile.src %>',
+                tasks: ['jshint:gruntfile'],
+            },
             handlebars: {
                 files: [
                     '<%= yeoman.app %>/scripts/templates/**/*.hbs'
@@ -113,8 +117,10 @@ module.exports = function (grunt) {
                 jshintrc: '.jshintrc',
                 reporter: require('jshint-stylish')
             },
+            gruntfile: {
+                src: ['Gruntfile.js']
+            },
             all: [
-                'Gruntfile.js',
                 '<%= yeoman.app %>/scripts/{,*/}*.js',
                 '!<%= yeoman.app %>/scripts/vendor/*',
                 'test/spec/{,*/}*.js'
