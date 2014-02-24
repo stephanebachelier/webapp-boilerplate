@@ -49,6 +49,10 @@ module.exports = function (grunt) {
         files: '<%= jshint.gruntfile.src %>',
         tasks: ['jshint:gruntfile'],
       },
+      code: {
+        files: ['test/spec/**/*.js'],
+        tasks: ['jshint:code']
+      },
       handlebars: {
         files: [
           '<%= yeoman.app %>/scripts/templates/**/*.hbs'
@@ -57,7 +61,7 @@ module.exports = function (grunt) {
       },
       test: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js', 'test/spec/**/*.js'],
-        tasks: ['test:true']
+        tasks: ['jshint:code', 'jshint:test', 'test:true']
       }
     },
     connect: {
@@ -120,11 +124,12 @@ module.exports = function (grunt) {
       gruntfile: {
         src: ['Gruntfile.js']
       },
-      all: [
-        '<%= yeoman.app %>/scripts/{,*/}*.js',
-        '!<%= yeoman.app %>/scripts/vendor/*',
-        'test/spec/{,*/}*.js'
-      ]
+      code: {
+        src: ['<%= yeoman.app %>/scripts/{,*/}*.js']
+      },
+      test: {
+        src: ['test/spec/{,*/}*.js']
+      }
     },
     mocha: {
       all: {
