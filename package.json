@@ -30,7 +30,8 @@
     "jit-grunt": "~0.2.2",
     "load-grunt-config": "~0.7.1",
     "glob": "~3.2.8",
-    "grunt-contrib-compass": "~0.7.2"
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-concurrent": "~0.4.3"
   },
   "engines": {
     "node": ">=0.8.0"

@@ -14,8 +14,12 @@ module.exports = function (grunt) {
 
     glob.sync('*', {cwd: path}).forEach(function (option) {
       key = option.replace(/\.js$/,'');
-      var req = require(path + option);
-      object[key] = typeof req === 'function' ? req(grunt) : req;
+      var req;
+      try {
+        req = require(path + option);
+        object[key] = typeof req === 'function' ? req(grunt) : req;
+      }
+      catch (e) {}
     });
 
     return object;
@@ -38,6 +42,7 @@ module.exports = function (grunt) {
   var env = grunt.option('target') || 'dev';
   if (env) {
     grunt.util._.extend(config, loadConfig('./tasks/' + env + '/'));
+    grunt.util._.extend(config, loadConfig('./tasks/options/' + env + '/'));
   }
 
   grunt.initConfig(config);

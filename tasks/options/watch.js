@@ -38,5 +38,9 @@ module.exports = {
   test: {
     files: ['test/spec/**/*.js'],
     tasks: ['lint-test', 'test:true']
+  },
+  compass: {
+    files: ['<%= yeoman.app %>/{,*/}*.scss'],
+    tasks: ['concurrent:dev']
   }
 };
