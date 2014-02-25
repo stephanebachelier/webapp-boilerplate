@@ -8,7 +8,12 @@
     "requirejs": "~2.1.5",
     "requirejs-text": "~2.0.5",
     "modernizr": "~2.6.2",
-    "handlebars": "~1.3.0"
+    "handlebars": "~1.3.0",
+    "backbone.babysitter": "~0.1.0",
+    "backbone.wreqr": "~1.0.0",
+    "backbone.marionette": "~1.6.2",
+    "backbone.syphon": "~0.4.1",
+    "superagent": "~0.16.0"
   },
   "devDependencies": {}
 }
