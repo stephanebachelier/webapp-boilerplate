@@ -12,22 +12,21 @@ module.exports = {
     },
     files: [
       '<%= yeoman.app %>/*.html',
-      '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
-      '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
+      '.tmp/styles/{,*/}*.css',
+      '.tmp/scripts/{,*/}*.js',
       '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
-      '<%= yeoman.app %>/scripts/templates/{,*/}*.hbs',
       'test/spec/**/*.js'
     ]
   },
   gruntfile: {
     files: [
-      '<%= jshint.gruntfile.src %>'
-      //'tasks/{,*/}*.js'
+      '<%= jshint.gruntfile.src %>',
+      'tasks/{,*/}*.js'
     ],
     tasks: ['jshint:gruntfile'],
   },
   code: {
-    files: ['test/spec/**/*.js'],
+    files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
     tasks: ['lint-code']
   },
   handlebars: {
@@ -37,7 +36,7 @@ module.exports = {
     tasks: ['handlebars']
   },
   test: {
-    files: ['<%= yeoman.app %>/scripts/{,*/}*.js', 'test/spec/**/*.js'],
-    tasks: ['lint-code', 'lint-test', 'test:true']
+    files: ['test/spec/**/*.js'],
+    tasks: ['lint-test', 'test:true']
   }
 };
