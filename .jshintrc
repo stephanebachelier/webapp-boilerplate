@@ -22,6 +22,6 @@
   "maxdepth": 3,
   "trailing": true,
   "smarttabs": true,
-  "onevar": true,
+  "onevar": false,
   "jquery": true
 }

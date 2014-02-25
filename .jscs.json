@@ -154,11 +154,10 @@
     "string"
   ],
 
+
   "disallowKeywords": [
     "with"
   ],
-
-  "requireMultipleVarDecl": true,
 
   "disallowMultipleLineStrings": true,
   "disallowMultipleLineBreaks": true,
