@@ -23,7 +23,7 @@ module.exports = {
       '<%= jshint.gruntfile.src %>',
       'tasks/{,*/}*.js'
     ],
-    tasks: ['jshint:gruntfile'],
+    tasks: ['jshint:gruntfile', 'jscs:grunt'],
   },
   code: {
     files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
