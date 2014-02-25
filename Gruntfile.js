@@ -34,6 +34,12 @@ module.exports = function (grunt) {
 
   grunt.util._.extend(config, loadConfig('./tasks/options/'));
 
+  // target specific configuration
+  var env = grunt.option('target') || 'dev';
+  if (env) {
+    grunt.util._.extend(config, loadConfig('./tasks/' + env + '/'));
+  }
+
   grunt.initConfig(config);
 
   require('load-grunt-config')(grunt, {
