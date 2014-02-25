@@ -6,6 +6,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'handlebars',
+      'compass:server',
       'connect:livereload',
       'open:server',
       'watch'

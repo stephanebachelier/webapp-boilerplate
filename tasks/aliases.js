@@ -2,6 +2,7 @@ module.exports = {
   build: [
     'clean:dist',
     'handlebars',
+    'compass:dist',
     'useminPrepare',
     'requirejs',
     'imagemin',
