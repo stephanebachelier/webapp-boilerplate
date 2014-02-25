@@ -41,6 +41,6 @@ module.exports = {
   },
   compass: {
     files: ['<%= yeoman.app %>/{,*/}*.scss'],
-    tasks: ['concurrent:dev']
+    tasks: ['concurrent']
   }
 };

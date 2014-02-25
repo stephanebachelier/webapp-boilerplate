@@ -4,7 +4,7 @@
 module.exports = {
   target: [
     'handlebars',
-    'compass:dist',
+    'style',
     'imagemin',
     'htmlmin'
   ]

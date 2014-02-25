@@ -4,6 +4,6 @@
 module.exports = {
   target: [
     'handlebars',
-    'compass:server'
+    'style'
   ]
 };
