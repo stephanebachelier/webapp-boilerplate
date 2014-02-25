@@ -32,7 +32,8 @@
     "glob": "~3.2.8",
     "grunt-contrib-compass": "~0.7.2",
     "grunt-concurrent": "~0.4.3",
-    "grunt-contrib-csslint": "~0.2.0"
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-jsonlint": "~1.0.4"
   },
   "engines": {
     "node": ">=0.8.0"
