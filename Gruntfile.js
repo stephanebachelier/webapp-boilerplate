@@ -1,25 +1,18 @@
 /* global require, module */
 'use strict';
 
-// # Globbing
-// for performance reasons we're only matching one level down:
-// 'test/spec/{,*/}*.js'
-// use this if you want to match all subfolders:
-// 'test/spec/**/*.js'
-// templateFramework: 'lodash'
-
 module.exports = function (grunt) {
   // show elapsed time at the end
   require('time-grunt')(grunt);
 
   var path = require('path');
 
-  function loadConfig(path) {
+  function loadConfig (path) {
     var glob = require('glob');
     var object = {};
     var key;
 
-    glob.sync('*', {cwd: path}).forEach(function(option) {
+    glob.sync('*', {cwd: path}).forEach(function (option) {
       key = option.replace(/\.js$/,'');
       var req = require(path + option);
       object[key] = typeof req === 'function' ? req(grunt) : req;
