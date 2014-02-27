@@ -1,6 +1,6 @@
 {
-  "name": "boilerplate",
-  "version": "0.0.0",
+  "name": "webapp_boilerplate",
+  "version": "0.1.0",
   "dependencies": {
     "jquery": "~1.9.0",
     "underscore": "~1.4.3",
