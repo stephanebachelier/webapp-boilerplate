@@ -42,7 +42,8 @@ require.config({
     marionette: '../bower_components/backbone.marionette/lib/core/amd/backbone.marionette',
     'backbone.babysitter': '../bower_components/backbone.babysitter/lib/amd/backbone.babysitter',
     'backbone.wreqr': '../bower_components/backbone.wreqr/lib/amd/backbone.wreqr',
-    superagent: '../bower_components/superagent/superagent'
+    superagent: '../bower_components/superagent/superagent',
+    fastclick: '../bower_components/fastclick/lib/fastclick'
   },
 
   deps: ['jquery', 'underscore']
