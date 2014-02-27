@@ -23,5 +23,9 @@
   "trailing": true,
   "smarttabs": true,
   "onevar": false,
-  "jquery": true
+  "jquery": true,
+  "globals": {
+    "require": true,
+    "define": true
+  }
 }
