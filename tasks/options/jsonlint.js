@@ -3,6 +3,10 @@
 
 module.exports = {
   target: {
-    src: ['bower.json', 'package.json']
+    src: [
+      'bower.json',
+      'package.json',
+      '<%= yeoman.app %>/scripts/{,*/}*.json'
+    ]
   }
 };
