@@ -26,5 +26,10 @@ module.exports = {
   'lint-test': [
     'jshint:test',
     'jscs:test'
+  ],
+  doc: [
+    'docco',
+    'open:doc',
+    'connect:doc:keepalive'
   ]
 };

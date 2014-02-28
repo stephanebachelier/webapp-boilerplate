@@ -45,5 +45,11 @@ module.exports = {
         ];
       }
     }
+  },
+  doc: {
+    options: {
+      port: 3003,
+      base: '<%= yeoman.doc %>'
+    }
   }
 };
