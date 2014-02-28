@@ -7,7 +7,8 @@ function (Marionette) {
 
   var Router = Marionette.AppRouter.extend({
     appRoutes: {
-      '': 'home'
+      '': 'home',
+      about: 'about'
     }
   });
 
