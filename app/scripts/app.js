@@ -1,12 +1,12 @@
-/*global define*/
-'use strict';
-
 define([
   'marionette',
   'backbone',
   'fastclick',
   'views/main'
-], function (Marionette, Backbone, FastClick, MainView) {
+],
+
+function (Marionette, Backbone, FastClick, MainView) {
+  'use strict';
 
   var app = new Marionette.Application();
 

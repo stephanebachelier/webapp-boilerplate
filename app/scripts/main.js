@@ -1,9 +1,10 @@
-/*global require*/
-'use strict';
-
 require([
   'config',
   'app'
-], function (Config, App) {
+],
+
+function (Config, App) {
+  'use strict';
+
   App.start();
 });
