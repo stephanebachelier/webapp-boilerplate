@@ -1,10 +1,11 @@
 require([
   'config',
-  'app'
+  'index'
 ],
 
-function (Config, App) {
+function (Config, Module) {
   'use strict';
 
-  App.start();
+  var app = new Module({el: '.hero-unit'});
+  app.start();
 });

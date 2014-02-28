@@ -8,21 +8,24 @@ define([
 function (Marionette, Backbone, FastClick, MainView) {
   'use strict';
 
-  var app = new Marionette.Application();
+  return function (options) {
+    console.log(options);
+    var app = new Marionette.Application();
 
-  app.addInitializer(function () {
-    this.view = new MainView({el: '.hero-unit'});
-    this.view.render();
-  });
+    app.addInitializer(function () {
+      this.view = new MainView({el: '.hero-unit'});
+      this.view.render();
+    });
 
-  app.addInitializer(function () {
-    FastClick.attach(document.body);
-  });
+    app.addInitializer(function () {
+      FastClick.attach(document.body);
+    });
 
-  app.addInitializer(function () {
-    Backbone.history.start();
-  });
+    app.addInitializer(function () {
+      Backbone.history.start();
+    });
 
-  return app;
+    return app;
+  };
 
 });
