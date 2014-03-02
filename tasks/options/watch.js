@@ -42,5 +42,9 @@ module.exports = {
   compass: {
     files: ['<%= yeoman.app %>/{,*/}*.scss'],
     tasks: ['concurrent']
+  },
+  json: {
+    files: ['<%= jsonlint.target.src %>'],
+    tasks: ['jsonlint']
   }
 };

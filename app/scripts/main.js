@@ -1,9 +1,11 @@
-/*global require*/
-'use strict';
-
 require([
   'config',
-  'app'
-], function (Config, App) {
-  App.start();
+  'index'
+],
+
+function (Config, Module) {
+  'use strict';
+
+  var app = new Module({el: '.hero-unit'});
+  app.start();
 });

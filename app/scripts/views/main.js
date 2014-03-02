@@ -1,10 +1,10 @@
-/*global define*/
-'use strict';
-
 define([
   'backbone',
   'templates'
-], function (Backbone, templates) {
+],
+
+function (Backbone, templates) {
+  'use strict';
 
   return Backbone.View.extend({
     template: templates.main,

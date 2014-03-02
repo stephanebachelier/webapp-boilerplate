@@ -7,5 +7,8 @@ module.exports = {
   },
   test: {
     path: 'http://localhost:<%= connect.test.options.port %>'
-  }
+  },
+  doc: {
+    path: 'http://localhost:<%= connect.doc.options.port %>'
+  },
 };

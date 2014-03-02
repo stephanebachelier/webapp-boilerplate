@@ -1,28 +1,35 @@
-/*global define*/
-'use strict';
-
 define([
   'marionette',
   'backbone',
   'fastclick',
-  'views/main'
-], function (Marionette, Backbone, FastClick, MainView) {
+  'controllers/nav',
+  'routers/router'
+],
 
-  var app = new Marionette.Application();
+function (Marionette, Backbone, FastClick, NavController, Router) {
+  'use strict';
 
-  app.addInitializer(function () {
-    this.view = new MainView({el: '.hero-unit'});
-    this.view.render();
-  });
+  return function (options) {
+    console.log(options);
+    var app = new Marionette.Application();
 
-  app.addInitializer(function () {
-    FastClick.attach(document.body);
-  });
+    app.addRegions({layout: options.el});
 
-  app.addInitializer(function () {
-    Backbone.history.start();
-  });
+    app.addInitializer(function () {
+      this.router = new Router({
+        controller: new NavController({region: app.layout})
+      });
+    });
 
-  return app;
+    app.addInitializer(function () {
+      FastClick.attach(document.body);
+    });
+
+    app.addInitializer(function () {
+      Backbone.history.start();
+    });
+
+    return app;
+  };
 
 });
