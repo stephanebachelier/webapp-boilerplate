@@ -42,7 +42,8 @@ require.config({
     'backbone.babysitter': '../bower_components/backbone.babysitter/lib/amd/backbone.babysitter',
     'backbone.wreqr': '../bower_components/backbone.wreqr/lib/amd/backbone.wreqr',
     superagent: '../bower_components/superagent/superagent',
-    fastclick: '../bower_components/fastclick/lib/fastclick'
+    fastclick: '../bower_components/fastclick/lib/fastclick',
+    woodman: '../bower_components/woodman/dist/woodman-browser-amd'
   },
 
   deps: ['jquery', 'underscore']
