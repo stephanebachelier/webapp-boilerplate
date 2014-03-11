@@ -9,6 +9,6 @@ module.exports = {
     path: 'http://localhost:<%= connect.test.options.port %>'
   },
   doc: {
-    path: 'http://localhost:<%= connect.doc.options.port %>'
+    path: 'http://localhost:<%= connect.doc.options.port %>/app/scripts/'
   },
 };
