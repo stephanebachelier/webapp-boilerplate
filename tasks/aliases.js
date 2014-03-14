@@ -28,7 +28,7 @@ module.exports = {
     'jscs:test'
   ],
   doc: [
-    'docco',
+    'groc',
     'open:doc',
     'connect:doc:keepalive'
   ]
