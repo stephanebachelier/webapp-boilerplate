@@ -8,7 +8,6 @@ module.exports = function (grunt) {
       'clean:server',
       'handlebars',
       'connect:test',
-      'mocha',
       'watch:test'
     ];
 

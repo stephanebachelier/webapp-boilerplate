@@ -16,7 +16,6 @@ module.exports = {
   default: [
     'lint-code',
     'lint-test',
-    'test',
     'build'
   ],
   'lint-code': [
