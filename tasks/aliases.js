@@ -6,7 +6,6 @@ module.exports = {
     'requirejs',
     'imagemin',
     'htmlmin',
-    'concat',
     'cssmin',
     'uglify',
     'copy',

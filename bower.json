@@ -14,7 +14,8 @@
     "superagent": "~0.16.0",
     "zeptojs": "~1.1.3",
     "fastclick": "~1.0.0",
-    "woodman": "~1.1.0"
+    "woodman": "~1.1.0",
+    "requirejs-plugins": "~1.0.2"
   },
   "devDependencies": {}
 }
