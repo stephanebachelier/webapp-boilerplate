@@ -33,9 +33,7 @@ First of all, you'll need **[nodejs](http://nodejs.org/)**. Then run these comma
 * `$ bower install`
 * `$ npm run-script build-zepto`
 
-And voilà! It should be working correctly, to verify that either run : `$ grunt serve` and you'll see a page with a little introduction of the Boilerplate.
-
-Or you can can run the tests with `$ karma start`
+And voilà! It should be working correctly, run : `$ grunt serve` and you'll see a page with a little introduction of the Boilerplate.
 
 **Happy coding guys!**
 
