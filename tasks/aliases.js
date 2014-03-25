@@ -19,11 +19,13 @@ module.exports = {
   ],
   'lint-code': [
     'jshint:code',
-    'jscs:code'
+    'jscs:code',
+    'lintspaces:code'
   ],
   'lint-test': [
     'jshint:test',
-    'jscs:test'
+    'jscs:test',
+    'lintspaces:test'
   ],
   doc: [
     'groc',
