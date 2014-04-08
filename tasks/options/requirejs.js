@@ -7,11 +7,11 @@ module.exports = {
     options: {
       baseUrl: '<%= yeoman.app %>/scripts',
       optimize: 'none',
+      out: '<%= yeoman.dist %>/scripts/main.js',
+      name: 'main',
+      mainConfigFile: '<%= yeoman.app %>/scripts/config.js',
       paths: {
-        templates: '../../.tmp/scripts/templates',
-        jquery: '../../app/bower_components/jquery/jquery',
-        underscore: '../../app/bower_components/underscore/underscore',
-        backbone: '../../app/bower_components/backbone/backbone'
+        templates: '../../.tmp/scripts/templates'
       },
       // TODO: Figure out how to make sourcemaps work with grunt-usemin
       // https://github.com/yeoman/grunt-usemin/issues/30
