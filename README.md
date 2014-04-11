@@ -98,6 +98,15 @@ Tests files are located in `/test/spec`, the library used for tests are :
 
 There are some tests example, check out them and test your code!
 
+### using grunt-karma
+
+From [grunt-karma README](https://github.com/karma-runner/grunt-karma):
+
+In your terminal window run:
+ `$ grunt karma:unit:start watch`
+
+which starts the karma server and the watch task. Now when grunt watch detects a change to one of your watched files, it will run the tests specified in the `unit` target using the already running karma server. This is the preferred method for development
+
 ## Notes
 
 ### Commons errors :
