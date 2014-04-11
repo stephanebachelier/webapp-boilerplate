@@ -8,3 +8,4 @@ test/bower_components/
 docs
 .DS_Store
 npm-debug.log
+report
