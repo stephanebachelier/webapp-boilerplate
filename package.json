@@ -54,7 +54,8 @@
     "karma-phantomjs-launcher": "~0.1.2",
     "grunt-lintspaces": "~0.4.1",
     "grunt-replace": "~0.7.6",
-    "grunt-plato": "^1.0.0"
+    "grunt-plato": "^1.0.0",
+    "grunt-karma": "^0.8.2"
   },
   "engines": {
     "node": ">=0.8.0"
