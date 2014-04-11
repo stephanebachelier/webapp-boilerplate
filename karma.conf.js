@@ -42,8 +42,18 @@ module.exports = function(config) {
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-    reporters: ['dots'],
+    reporters: ['dots', 'progress', 'coverage'],
 
+
+    preprocessors: {
+      'app/scripts/**/*.js': ['coverage']
+    },
+
+
+    coverageReporter: {
+      type: 'html',
+      dir: 'coverage/'
+    },
 
     // web server port
     port: 9876,
