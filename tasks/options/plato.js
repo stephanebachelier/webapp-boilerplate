@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     },
     report: {
       files: {
-        'report': [
+        report: [
           '<%= yeoman.app/scripts/**/*.js',
           'test/*.js'
         ]
