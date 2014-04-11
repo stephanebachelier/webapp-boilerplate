@@ -36,8 +36,8 @@ module.exports = {
     tasks: ['handlebars']
   },
   test: {
-    files: ['test/spec/**/*.js'],
-    tasks: ['lint-test', 'test:true']
+    files: ['test/spec/**/*.js', 'test/spec/**/*.js'],
+    tasks: ['lint-test', 'karma:unit:run']
   },
   compass: {
     files: ['<%= yeoman.app %>/{,*/}*.scss'],
