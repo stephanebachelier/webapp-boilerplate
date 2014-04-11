@@ -21,6 +21,10 @@ module.exports = {
     'lint-test',
     'build'
   ],
+  dev: [
+    'karma:unit:start',
+    'watch'
+  ],
   'lint-code': [
     'jshint:code',
     'jscs:code',
