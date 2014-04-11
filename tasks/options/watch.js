@@ -36,7 +36,7 @@ module.exports = {
     tasks: ['handlebars']
   },
   test: {
-    files: ['test/spec/**/*.js', 'test/spec/**/*.js'],
+    files: ['test/spec/**/*.js'],
     tasks: ['lint-test', 'karma:unit:run']
   },
   compass: {
