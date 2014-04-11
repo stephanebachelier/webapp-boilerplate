@@ -13,7 +13,7 @@ module.exports = {
     'copy:requirejs',
     'uglify:requirejs',
     'replace:requirejs',
-    'rev',
+    'filerev',
     'usemin'
   ],
   default: [
