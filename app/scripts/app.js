@@ -3,15 +3,13 @@ define([
   'backbone',
   'fastclick',
   'controllers/nav',
-  'routers/router',
-  'logger'
+  'routers/router'
 ],
 
-function (Marionette, Backbone, FastClick, NavController, Router, logger) {
+function (Marionette, Backbone, FastClick, NavController, Router) {
   'use strict';
 
   return function (options) {
-    logger.log(options);
     var app = new Marionette.Application();
 
     app.addRegions({layout: options.el});
