@@ -24,28 +24,6 @@ module.exports = {
       }
     }
   },
-  test: {
-    options: {
-      port: 9001,
-      middleware: function (connect) {
-        return [
-          lrSnippet,
-          mountFolder(connect, '.tmp'),
-          mountFolder(connect, 'test'),
-          mountFolder(connect, 'app')
-        ];
-      }
-    }
-  },
-  dist: {
-    options: {
-      middleware: function (connect) {
-        return [
-          mountFolder(connect, 'dist')
-        ];
-      }
-    }
-  },
   doc: {
     options: {
       port: 3003,
