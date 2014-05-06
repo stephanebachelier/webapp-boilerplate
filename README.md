@@ -19,7 +19,7 @@ Yeoman generators are great but IMHO not sufficient for an everyday developer. W
  * [Handlebars](http://handlebarsjs.com/): Templates made easy
  * [superagent](http://visionmedia.github.io/superagent/): A proper implementation to make HTTP request.
  * [fastclick](https://github.com/ftlabs/fastclick): To remove ~300ms delay on click (mobile)
- * [woodman](http://joshfire.github.io/woodman/): Flexible JavaScript logger utility based on log4j
+ * [Backbone.Syphon](https://github.com/marionettejs/backbone.syphon): To serialize form as an object.
 
 
 ## Installation / How-to
@@ -124,5 +124,4 @@ create app/scripts/models/mymodel.js
 
 ### Other :
 
-* The `$ grunt build` doesn't works atm.
 * Not tested on Windows!
