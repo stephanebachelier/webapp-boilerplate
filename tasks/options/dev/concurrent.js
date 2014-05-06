@@ -2,8 +2,20 @@
 'use strict';
 
 module.exports = {
-  target: [
-    'handlebars',
-    'style'
-  ]
+  options: {
+    logConcurrentOutput: true
+  },
+  server: {
+    tasks: [
+      'handlebars',
+      'style'
+    ]
+  },
+  build: {
+    tasks: [
+      'handlebars',
+      'style',
+      'buildit'
+    ]
+  }
 };

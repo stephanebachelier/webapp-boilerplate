@@ -16,7 +16,7 @@ module.exports = {
   },
   dist: {
     options: {
-      style: 'compressed'
+      outputStyle: 'compressed'
     }
   },
   server: {

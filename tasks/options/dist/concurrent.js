@@ -2,10 +2,19 @@
 'use strict';
 
 module.exports = {
-  target: [
-    'handlebars',
-    'style',
-    'imagemin',
-    'htmlmin'
-  ]
+  serve: {
+    tasks: [
+      'handlebars',
+      'style',
+      'imagemin',
+      'htmlmin'
+    ]
+  },
+  build: {
+    tasks: [
+      'handlebars',
+      'style',
+      'buildit'
+    ]
+  }
 };

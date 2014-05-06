@@ -1,20 +1,7 @@
 module.exports = {
   build: [
     'clean:dist',
-    'concurrent',
-    'useminPrepare',
-    'requirejs',
-    'htmlmin',
-    'concat',
-    'cssmin',
-    'uglify:dist',
-    'copy:dist',
-    'imagemin',
-    'copy:requirejs',
-    'uglify:requirejs',
-    'replace:requirejs',
-    'filerev',
-    'usemin'
+    'concurrent:build'
   ],
   default: [
     'lint-code',

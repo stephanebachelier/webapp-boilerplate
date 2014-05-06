@@ -5,7 +5,7 @@ module.exports = function (grunt) {
   grunt.registerTask('serve', function (target) {
     grunt.task.run([
       'clean:server',
-      'concurrent',
+      'concurrent:server',
       'connect:livereload',
       'open:server',
       'watch'
