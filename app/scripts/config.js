@@ -15,9 +15,6 @@ require.config({
         'jquery'
       ],
       exports: 'Backbone'
-    },
-    handlebars: {
-      exports: 'Handlebars'
     }
   },
   paths: {

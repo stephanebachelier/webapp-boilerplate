@@ -24,7 +24,7 @@
     "connect-livereload": "~0.3.2",
     "time-grunt": "~0.2.10",
     "jshint-stylish": "~0.1.5",
-    "grunt-contrib-handlebars": "~0.7.0",
+    "grunt-contrib-handlebars": "git://github.com/nathanjd/grunt-contrib-handlebars.git#master",
     "grunt-jscs-checker": "~0.4.0",
     "jit-grunt": "~0.3.2",
     "load-grunt-config": "~0.7.2",

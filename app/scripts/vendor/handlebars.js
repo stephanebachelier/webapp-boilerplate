@@ -5,5 +5,12 @@ define([
 function (Handlebars) {
   'use strict';
 
-  return Handlebars.default;
+  // Here you gonna register your Handlebars helpers like this:
+  // ```
+  //  Handlebars.default.registerHelper('foo', function () {
+  //    return 'bar';
+  //  });
+  // ```
+
+  return Handlebars;
 });
