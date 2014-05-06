@@ -1,17 +1,12 @@
 define([
   'marionette',
-  'templates',
-  'logger'
+  'templates'
 ],
 
-function (Marionette, templates, logger) {
+function (Marionette, templates) {
   'use strict';
 
   return Marionette.ItemView.extend({
     template: templates.about,
-
-    initialize: function () {
-      logger.log('You see the about page');
-    }
   });
 });

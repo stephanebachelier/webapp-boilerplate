@@ -30,8 +30,7 @@ require.config({
     'backbone.babysitter': '../bower_components/backbone.babysitter/lib/backbone.babysitter',
     'backbone.wreqr': '../bower_components/backbone.wreqr/lib/backbone.wreqr',
     superagent: '../bower_components/superagent/superagent',
-    fastclick: '../bower_components/fastclick/lib/fastclick',
-    woodman: '../bower_components/woodman/dist/woodman-browser-amd'
+    fastclick: '../bower_components/fastclick/lib/fastclick'
   },
 
   deps: ['jquery', 'underscore']
