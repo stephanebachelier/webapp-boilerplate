@@ -27,18 +27,6 @@ requirejs.config({
       ],
       exports: 'Backbone'
     },
-    marionette: {
-      deps: ['backbone', 'backbone.babysitter', 'backbone.wreqr'],
-      exports: 'Backbone.Marionette'
-    },
-    'backbone.babysitter': {
-      deps: ['underscore', 'backbone'],
-      exports: 'Backbone.BabySitter'
-    },
-    'backbone.wreqr': {
-      deps: ['underscore', 'backbone'],
-      exports: 'Backbone.Wreqr'
-    },
     handlebars: {
       exports: 'Handlebars'
     }
@@ -53,8 +41,7 @@ requirejs.config({
     'backbone.babysitter': '../bower_components/backbone.babysitter/lib/backbone.babysitter',
     'backbone.wreqr': '../bower_components/backbone.wreqr/lib/backbone.wreqr',
     superagent: '../bower_components/superagent/superagent',
-    fastclick: '../bower_components/fastclick/lib/fastclick',
-    woodman: '../bower_components/woodman/dist/woodman-browser-amd'
+    fastclick: '../bower_components/fastclick/lib/fastclick'
   },
 
   // ask Require.js to load these files (all our tests)

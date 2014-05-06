@@ -23,7 +23,6 @@ module.exports = function(config) {
       {pattern: 'app/bower_components/backbone.wreqr/lib/backbone.wreqr.js', included: false},
       {pattern: 'app/bower_components/superagent/superagent.js', included: false},
       {pattern: 'app/bower_components/fastclick/lib/fastclick.js', included: false},
-      {pattern: 'app/bower_components/woodman/dist/woodman-browser-amd.js', included: false},
       {pattern: '.tmp/scripts/templates.js', included: false},
       {pattern: 'app/scripts/**/*.js', included: false},
       {pattern: 'test/spec/**/*.js', included: false},
