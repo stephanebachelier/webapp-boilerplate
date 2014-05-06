@@ -16,18 +16,6 @@ require.config({
       ],
       exports: 'Backbone'
     },
-    marionette: {
-      deps: ['backbone', 'backbone.babysitter', 'backbone.wreqr'],
-      exports: 'Backbone.Marionette'
-    },
-    'backbone.babysitter': {
-      deps: ['underscore', 'backbone'],
-      exports: 'Backbone.BabySitter'
-    },
-    'backbone.wreqr': {
-      deps: ['underscore', 'backbone'],
-      exports: 'Backbone.Wreqr'
-    },
     handlebars: {
       exports: 'Handlebars'
     }
