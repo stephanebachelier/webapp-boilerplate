@@ -56,7 +56,8 @@
     "grunt-replace": "~0.7.6",
     "grunt-plato": "^1.0.0",
     "grunt-karma": "^0.8.2",
-    "grunt-filerev": "^0.2.1"
+    "grunt-filerev": "^0.2.1",
+    "karma-conf-updater": "0.0.1"
   },
   "engines": {
     "node": ">=0.8.0"

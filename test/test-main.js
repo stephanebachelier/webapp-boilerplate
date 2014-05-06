@@ -48,16 +48,13 @@ requirejs.config({
     jquery: '../bower_components/zeptojs/dist/zepto',
     backbone: '../bower_components/backbone/backbone',
     underscore: '../bower_components/underscore/underscore',
-    handlebars: '../bower_components/handlebars/handlebars.runtime',
+    'handlebars.runtime': '../bower_components/handlebars/handlebars.runtime.amd',
     marionette: '../bower_components/backbone.marionette/lib/core/amd/backbone.marionette',
-    'backbone.babysitter': '../../app/bower_components/backbone.babysitter/lib/amd/backbone.babysitter',
-    'backbone.wreqr': '../../app/bower_components/backbone.wreqr/lib/amd/backbone.wreqr',
-    superagent: '../../app/bower_components/superagent/superagent',
+    'backbone.babysitter': '../bower_components/backbone.babysitter/lib/backbone.babysitter',
+    'backbone.wreqr': '../bower_components/backbone.wreqr/lib/backbone.wreqr',
+    superagent: '../bower_components/superagent/superagent',
     fastclick: '../bower_components/fastclick/lib/fastclick',
-    woodman: '../../app/bower_components/woodman/dist/woodman-browser-amd',
-    validator: '../../app/bower_components/validator.js/validator',
-    text: '../bower_components/requirejs-text/text',
-    json: '../bower_components/requirejs-plugins/src/json'
+    woodman: '../bower_components/woodman/dist/woodman-browser-amd'
   },
 
   // ask Require.js to load these files (all our tests)
