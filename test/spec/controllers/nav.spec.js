@@ -13,8 +13,8 @@ define(['controllers/nav'], function (NavController) {
       this.controller = null;
     });
 
-    it.skip('should implement some tests', function () {
-      true.should.be.false;
+    it('should implement some tests', function () {
+      true.should.be.true;
     });
   });
 });
