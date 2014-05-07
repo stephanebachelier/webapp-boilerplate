@@ -15,5 +15,12 @@ module.exports = {
         '<%= yeoman.dist %>/scripts/require.js'
       ]
     }
+  },
+  lib: {
+    files: {
+      '<%= yeoman.lib %>/scripts/index.min.js': [
+        '<%= yeoman.lib %>/scripts/index.js'
+      ]
+    }
   }
 };

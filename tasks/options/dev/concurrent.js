@@ -17,5 +17,12 @@ module.exports = {
       'style',
       'buildit'
     ]
+  },
+  lib: {
+    tasks: [
+      'handlebars',
+      'style',
+      'requirejs:lib'
+    ]
   }
 };

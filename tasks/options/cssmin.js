@@ -9,5 +9,13 @@ module.exports = {
         '<%= yeoman.app %>/styles/{,*/}*.css'
       ]
     }
+  },
+  lib: {
+    files: {
+      '<%= yeoman.lib %>/styles/main.css': [
+        '.tmp/styles/{,*/}*.css',
+        '<%= yeoman.app %>/styles/{,*/}*.css'
+      ]
+    }
   }
 };

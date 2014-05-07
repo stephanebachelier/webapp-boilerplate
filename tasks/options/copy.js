@@ -31,5 +31,21 @@ module.exports = {
       src: 'require.js',
       dest: '<%= yeoman.dist %>/scripts/'
     }]
+  },
+  lib: {
+    files: [
+      {
+        expand: true,
+        cwd: '.tmp/<%= yeoman.lib %>',
+        src: ['{index,common}.js'],
+        dest: '<%= yeoman.lib %>/scripts'
+      },
+      {
+        expand: true,
+        cwd: '.tmp/styles',
+        src: ['*.css'],
+        dest: '<%= yeoman.lib %>/styles'
+      },
+    ]
   }
 };

@@ -23,5 +23,48 @@ module.exports = {
       wrap: true
       //uglify2: {} // https://github.com/mishoo/UglifyJS2
     }
+  },
+  lib: {
+    options: {
+      baseUrl: '<%= yeoman.app %>/scripts',
+      optimize: 'none',
+      dir: '.tmp/<%= yeoman.lib %>',
+      mainConfigFile: '<%= yeoman.app %>/scripts/config.js',
+      paths: {
+        templates: '../../.tmp/scripts/templates',
+      },
+      removeCombined: true,
+      modules: [
+        {
+          name: 'index',
+          exclude: [
+            'jquery',
+            'underscore',
+            'backbone',
+            'handlebars',
+            'marionette',
+            'backbone.babysitter',
+            'backbone.wreqr',
+            'superagent',
+            'fastclick'
+          ]
+        },
+        {
+          name: 'common',
+          create: true,
+          include: [
+            'jquery',
+            'underscore',
+            'backbone',
+            'handlebars',
+            'marionette',
+            'backbone.babysitter',
+            'backbone.wreqr',
+            'superagent',
+            'fastclick'
+          ]
+        }
+      ]
+    }
   }
 };

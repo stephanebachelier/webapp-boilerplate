@@ -5,7 +5,7 @@ module.exports = function (grunt) {
   grunt.registerTask('buildit', function () {
     grunt.task.run([
       'useminPrepare',
-      'requirejs',
+      'requirejs:dist',
       'htmlmin',
       'concat',
       'cssmin',

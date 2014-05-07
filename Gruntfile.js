@@ -29,7 +29,8 @@ module.exports = function (grunt) {
   var yeomanConfig = {
     app: 'app',
     dist: 'dist',
-    doc: 'docs'
+    doc: 'docs',
+    lib: 'lib'
   };
 
   var config = {

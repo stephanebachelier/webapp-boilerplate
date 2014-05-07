@@ -3,6 +3,13 @@ module.exports = {
     'clean:dist',
     'concurrent:build'
   ],
+  buildlib: [
+    'clean:lib',
+    'concurrent:lib',
+    'copy:lib',
+    'uglify:lib',
+    'cssmin:lib'
+  ],
   default: [
     'lint-code',
     'lint-test',

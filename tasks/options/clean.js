@@ -3,5 +3,6 @@
 
 module.exports = {
   dist: ['.tmp', '<%= yeoman.dist %>/*'],
-  server: '.tmp'
+  server: '.tmp',
+  lib: ['.tmp',  '<%= yeoman.lib %>/*']
 };
