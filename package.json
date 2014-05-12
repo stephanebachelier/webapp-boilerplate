@@ -67,8 +67,6 @@
     "type": "git"
   },
   "scripts": {
-    "preinstall": "npm install -g bower grunt-cli karma-cli",
-    "test": "node_modules/karma/bin/karma start",
     "build-zepto": "cd app/bower_components/zeptojs && npm install && MODULES='zepto event data deferred ajax callbacks form assets' npm run-script dist"
   }
 }

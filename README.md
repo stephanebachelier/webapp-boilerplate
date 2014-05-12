@@ -24,11 +24,10 @@ Yeoman generators are great but IMHO not sufficient for an everyday developer. W
 
 ## Installation / How-to
 
-First of all, you'll need **[nodejs](http://nodejs.org/)**. Then run these commands:
+First of all, you'll need: **[nodejs](http://nodejs.org/)**, **[bower](http://bower.io/)**. Then run these commands:
 
 * `$ git clone git@github.com:stephanebachelier/webapp-boilerplate.git`
 * `$ cd webapp-boilerplate`
-* `$ npm run-script preinstall`
 * `$ npm install`
 * `$ bower install`
 * `$ npm run-script build-zepto`
@@ -59,6 +58,8 @@ It will watch the files in `app/scripts`, he will execute these tasks :
 
 And then reload your page for you if everything is OK! :)
 
+It will also watch the `.spec.js` files in `test` directory, and run the unit tests with karma.
+
 ### $ grunt doc
 
 Generates a doc using **[groc](https://github.com/nevir/groc)** and opens it in your default browser.
@@ -81,13 +82,19 @@ Compile your `.scss/.sass` files and lint them, report errors if any.
 
 Lint your `.js` files, report errors if any.
 
+### $ grunt dev
+
+It will watch the `.spec.js` files in the `test` director and run the tests on change.
+
 ## Tests
 
 **[Karma](http://karma-runner.github.io/)** test runner is used for tests. Configuration is inspired by [Kim's example project](https://github.com/kjbekkelund/karma-requirejs), you should checkout the `README.md` to learn more about the configuation.
 
 > The main goal for Karma is to bring a productive testing environment to developers. The environment being one where they don't have to set up loads of configurations, but rather a place where developers can just write the code and get instant feedback from their tests.
 
-To run the tests, you can either use `$ npm test` or `$ karma start`
+To run the tests, you can use:
+* `$ grunt dev` command, it will watch the `.spec.js` files in the `test` director and run the tests on change.
+* If you have installed karma cli with `$ npm install karma-cli -g` you can run `$ karma start` to start the tests.
 
 Tests files are located in `/test/spec`, the library used for tests are :
 
@@ -97,15 +104,6 @@ Tests files are located in `/test/spec`, the library used for tests are :
 * [chai](http://chaijs.com/): BDD / TDD assertion library
 
 There are some tests example, check out them and test your code!
-
-### using grunt-karma
-
-From [grunt-karma README](https://github.com/karma-runner/grunt-karma):
-
-In your terminal window run:
- `$ grunt karma:unit:start watch`
-
-which starts the karma server and the watch task. Now when grunt watch detects a change to one of your watched files, it will run the tests specified in the `unit` target using the already running karma server. This is the preferred method for development
 
 ## Notes
 
