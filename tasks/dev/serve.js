@@ -8,6 +8,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'connect:livereload',
       'open:server',
+      'karma:unit:start',
       'watch'
     ]);
   });
