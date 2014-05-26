@@ -17,5 +17,9 @@
     "requirejs-plugins": "^1.0.2",
     "backbone.syphon": "~0.4.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "requirejs-text": "~2.0.12",
+    "requirejs-plugins": "~1.0.2",
+    "require.replace": "~0.3.0"
+  }
 }
