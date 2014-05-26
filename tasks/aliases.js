@@ -33,5 +33,10 @@ module.exports = {
     'groc',
     'open:doc',
     'connect:doc:keepalive'
+  ],
+  data: [
+    'clean:data',
+    'shell:data',
+    'wrap:data'
   ]
 };
