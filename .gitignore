@@ -11,3 +11,5 @@ docs
 npm-debug.log
 report
 coverage
+data/**/*.json
+app/data
