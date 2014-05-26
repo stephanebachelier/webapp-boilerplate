@@ -46,5 +46,9 @@ module.exports = {
   json: {
     files: ['<%= jsonlint.target.src %>'],
     tasks: ['jsonlint']
+  },
+  data: {
+    files: ['data/**/*.yaml'],
+    tasks: ['data']
   }
 };
