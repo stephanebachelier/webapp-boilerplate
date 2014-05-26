@@ -6,9 +6,9 @@ module.exports = {
     src: ['Gruntfile.js', 'tasks/**/*.js']
   },
   code: {
-    src: ['<%= yeoman.app %>/scripts/{,*/}*.js']
+    src: ['<%= yeoman.app %>/scripts/**/*.js']
   },
   test: {
-    src: ['test/spec/{,*/}*.js']
+    src: ['test/spec/**/*.js']
   }
 };

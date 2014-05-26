@@ -86,6 +86,14 @@ Lint your `.js` files, report errors if any.
 
 It will watch the `.spec.js` files in the `test` director and run the tests on change.
 
+## i18n support
+
+We have built-in `i18n` support for your HTML5 Apps, check `/data/{lang}/i18n.yaml` where the keys for internationalization are stored. The `.yaml` files will be converted to `.json`.
+
+We added also in `app/scripts/config.js` a method how to determine the locale of the browser, and load the correct language for the user. Nothing to do, it's i18n ready!
+
+You can use directly in your templates the `{{t 'i18n-key'}}` handlebar helper. See `app/scripts/templates/about.hbs` for an example how to use into templates.
+
 ## Tests
 
 **[Karma](http://karma-runner.github.io/)** test runner is used for tests. Configuration is inspired by [Kim's example project](https://github.com/kjbekkelund/karma-requirejs), you should checkout the `README.md` to learn more about the configuation.

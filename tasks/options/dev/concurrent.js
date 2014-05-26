@@ -8,7 +8,8 @@ module.exports = {
   server: {
     tasks: [
       'handlebars',
-      'style'
+      'style',
+      'data'
     ]
   },
   build: {
