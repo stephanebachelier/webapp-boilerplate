@@ -12,4 +12,6 @@ npm-debug.log
 report
 coverage
 data/**/*.json
+fixtures/**/*.json
 app/data
+app/fixtures

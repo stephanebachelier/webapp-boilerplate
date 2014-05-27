@@ -9,7 +9,8 @@ module.exports = {
     tasks: [
       'handlebars',
       'style',
-      'data'
+      'data',
+      'fixtures'
     ]
   },
   build: {

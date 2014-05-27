@@ -50,5 +50,9 @@ module.exports = {
   data: {
     files: ['data/**/*.yaml'],
     tasks: ['data']
+  },
+  fixtures: {
+    files: ['fixtures/**/*.yaml'],
+    tasks: ['fixtures']
   }
 };

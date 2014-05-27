@@ -38,5 +38,10 @@ module.exports = {
     'clean:data',
     'shell:data',
     'wrap:data'
+  ],
+  fixtures: [
+    'clean:data',
+    'shell:data',
+    'wrap:data'
   ]
 };
