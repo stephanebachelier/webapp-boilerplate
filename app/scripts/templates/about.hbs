@@ -7,7 +7,9 @@
 <h3>{{t 'view.about.third.title'}}</h3>
 <p>{{t 'view.about.inside.section'}}</p>
 <ul>
-	{{{t 'view.about.inside.list'}}}
+	{{#each included}}
+		<li>{{this}}</li>
+	{{/each}}
 </ul>
 
 <h3>{{t 'view.about.fourth.title'}}</h3>

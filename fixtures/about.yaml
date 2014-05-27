@@ -1,0 +1,21 @@
+included:
+  -
+    "`yo`: Yeoman of course!"
+  -
+    "`grunt`: the famous javascript task runner"
+  -
+    "`bower`: the front-end package manager"
+  -
+    "`Backbone.Marionette` and its dependencies: `Backbone.Wreqr`, `Backbone.BabySitter`"
+  -
+    "`Backbone.Syphon`: to serialize form as objects"
+  -
+    "`validate.js`: to validate forms using its matching expressions"
+  -
+    "`fastclick`: to remove ~300ms delay on click (mobile)"
+  -
+    "`zepto`: replace `jQuery`, with a custom build to select only what's needed."
+  -
+    "`underscore`: will be replaced by `lodash` soon."
+  -
+    "`superagent`: a proper implementation to make HTTP request."

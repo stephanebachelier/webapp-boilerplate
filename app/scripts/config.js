@@ -33,7 +33,8 @@ require.config({
     text: '../bower_components/requirejs-text/text',
     json: '../bower_components/requirejs-plugins/src/json',
     replace: '../bower_components/require.replace/require.replace',
-    fastclick: '../bower_components/fastclick/lib/fastclick'
+    fastclick: '../bower_components/fastclick/lib/fastclick',
+    fixtures: '../fixtures'
   },
 
   config: {
