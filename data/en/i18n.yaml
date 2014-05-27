@@ -6,17 +6,6 @@ view.about.why.section: "Yeoman generators are great but IMHO not sufficient for
 
 view.about.third.title: "What's inside"
 view.about.inside.section: "This boilerplate is built on top of `yeoman` to create SPA while using Backbone.Marionette. It was started by using `generator-backbone`."
-view.about.inside.list: |
-  <li>`yo`: Yeoman of course!</li>
-  <li>`grunt`: the famous javascript task runner</li>
-  <li>`bower`: the front-end package manager</li>
-  <li>`Backbone.Marionette` and its dependencies: `Backbone.Wreqr`, `Backbone.BabySitter`</li>
-  <li>`Backbone.Syphon`: to serialize form as objects</li>
-  <li>`validate.js`: to validate forms using its matching expressions</li>
-  <li>`fastclick`: to remove ~300ms delay on click (mobile)</li>
-  <li>`zepto`: replace `jQuery`, with a custom build to select only what's needed.</li>
-  <li>`underscore`: will be replaced by `lodash` soon.</li>
-  <li>`superagent`: a proper implementation to make HTTP request.</li>
 
 view.about.fourth.title: "Using `yo` generators"
 view.about.yeoman.section: "You can always use `yo` generators while using this boilerplate. While you don't try to bootstrap an app with any generator, you should be fine."

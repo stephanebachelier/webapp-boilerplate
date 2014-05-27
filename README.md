@@ -86,7 +86,7 @@ Lint your `.js` files, report errors if any.
 
 It will watch the `.spec.js` files in the `test` director and run the tests on change.
 
-## i18n support
+## i18n support built-in
 
 We have built-in `i18n` support for your HTML5 Apps, check `/data/{lang}/i18n.yaml` where the keys for internationalization are stored. The `.yaml` files will be converted to `.json`.
 
@@ -94,9 +94,13 @@ We added also in `app/scripts/config.js` a method how to determine the locale of
 
 You can use directly in your templates the `{{t 'i18n-key'}}` handlebar helper. See `app/scripts/templates/about.hbs` for an example how to use into templates.
 
+## Fixtures support built-in
+
+We have also a built-in support for "fixtures", it works similarly as i18n. There's an example into About view.
+
 ## Tests
 
-**[Karma](http://karma-runner.github.io/)** test runner is used for tests. Configuration is inspired by [Kim's example project](https://github.com/kjbekkelund/karma-requirejs), you should checkout the `README.md` to learn more about the configuation.
+**[Karma](http://karma-runner.github.io/)** test runner is used for tests. Configuration is inspired by [Kim's example project](https://github.com/kjbekkelund/karma-requirejs), you should checkout the `README.md` to learn more about the configuration.
 
 > The main goal for Karma is to bring a productive testing environment to developers. The environment being one where they don't have to set up loads of configurations, but rather a place where developers can just write the code and get instant feedback from their tests.
 
@@ -130,4 +134,4 @@ create app/scripts/models/mymodel.js
 
 ### Other :
 
-* Not tested on Windows!
+* Dev tools are not tested on Windows!
