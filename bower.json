@@ -15,7 +15,7 @@
     "zeptojs": "^1.1.0",
     "requirejs-plugins": "^1.0.2",
     "backbone.syphon": "~0.4.1",
-    "fingerblast": "^1.0.0"
+    "fingerblast": "^1.1.0"
   },
   "devDependencies": {
     "requirejs-text": "~2.0.12",
