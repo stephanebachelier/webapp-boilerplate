@@ -13,9 +13,9 @@
     "backbone.marionette": "^1.8.0",
     "superagent": "^0.16.0",
     "zeptojs": "^1.1.0",
-    "fastclick": "^1.0.0",
     "requirejs-plugins": "^1.0.2",
-    "backbone.syphon": "~0.4.1"
+    "backbone.syphon": "~0.4.1",
+    "fingerblast": "^1.0.0"
   },
   "devDependencies": {
     "requirejs-text": "~2.0.12",

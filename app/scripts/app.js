@@ -1,13 +1,15 @@
 define([
   'marionette',
   'backbone',
-  'fastclick',
+  'fingerblast',
   'controllers/nav',
   'routers/router'
 ],
 
-function (Marionette, Backbone, FastClick, NavController, Router) {
+function (Marionette, Backbone, FingerBlast, NavController, Router) {
   'use strict';
+
+  var fingerBlast;
 
   return function (options) {
     var app = new Marionette.Application();
@@ -21,7 +23,9 @@ function (Marionette, Backbone, FastClick, NavController, Router) {
     });
 
     app.addInitializer(function () {
-      FastClick.attach(document.body);
+      if (window.ontouchstart === undefined) {
+        fingerBlast = new FingerBlast(document.body);
+      }
     });
 
     app.addInitializer(function () {
