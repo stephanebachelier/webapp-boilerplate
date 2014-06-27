@@ -14,7 +14,7 @@ Yeoman generators are great but IMHO not sufficient for an everyday developer. W
  * [Backbone.babysitter](https://github.com/marionettejs/backbone.babysitter): Manage Backbone Views, dependancies of **Marionette**
  * [Backbone.wreqr](https://github.com/marionettejs/backbone.wreqr): Event aggregator, dependancies of **Marionette**
  * [Require.js](http://requirejs.org/): Browser module loader
- * [Zepto.js](http://zeptojs.com/): replace **jQuery**, with a custom build to select only what's needed.
+ * [jQuery 2](http://jquery.com/): jQuery 2 which is faster on DOM than Zepto.
  * [Underscore.js](http://underscorejs.org/): Will be replaced by **lodash** soon.
  * [Handlebars](http://handlebarsjs.com/): Templates made easy
  * [superagent](http://visionmedia.github.io/superagent/): A proper implementation to make HTTP request.
@@ -30,7 +30,6 @@ First of all, you'll need: **[nodejs](http://nodejs.org/)**, **[bower](http://bo
 * `$ cd webapp-boilerplate`
 * `$ npm install`
 * `$ bower install`
-* `$ npm run-script build-zepto`
 
 And voilà! It should be working correctly, run : `$ grunt serve` and you'll see a page with a little introduction of the Boilerplate.
 

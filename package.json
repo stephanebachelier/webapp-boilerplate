@@ -67,8 +67,5 @@
   "repository": {
     "url": "git@github.com:stephanebachelier/webapp-boilerplate.git",
     "type": "git"
-  },
-  "scripts": {
-    "build-zepto": "cd app/bower_components/zeptojs && npm install && MODULES='zepto event data deferred ajax callbacks form assets' npm run-script dist"
   }
 }
