@@ -1,6 +1,6 @@
 {
 
-  "maximumLineLength": 120,
+  "maximumLineLength": 140,
 
   "validateJSDoc": {
     "checkParamNames": true,
@@ -74,11 +74,11 @@
     "!=="
   ],
 
-  "requireRightStickedOperators": [
+  "disallowSpaceAfterBinaryOperators": [
     "!"
   ],
 
-  "requireLeftStickedOperators": [
+  "disallowSpaceBeforeBinaryOperators": [
     ","
   ],
 
@@ -95,11 +95,10 @@
 
   "requireParenthesesAroundIIFE": true,
   "requireCommaBeforeLineBreak": true,
-  "requireCamelCaseOrUpperCaseIdentifiers": true,
   "requireCapitalizedConstructors": true,
   "requireDotNotation": true,
 
-  "disallowLeftStickedOperators": [
+  "requireSpaceBeforeBinaryOperators": [
     "?",
     "+",
     "-",
@@ -125,7 +124,7 @@
     "!"
   ],
 
-  "disallowRightStickedOperators": [
+  "requireSpaceAfterBinaryOperators": [
     "?",
     "+",
     "/",
