@@ -93,6 +93,11 @@
     "beforeOpeningCurlyBrace": true
   },
 
+  "disallowSpacesInFunctionExpression": {
+   "beforeOpeningRoundBrace": false,
+   "beforeOpeningCurlyBrace": false
+  },
+
   "requireParenthesesAroundIIFE": true,
   "requireCommaBeforeLineBreak": true,
   "requireCamelCaseOrUpperCaseIdentifiers": true,
