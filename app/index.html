@@ -39,5 +39,16 @@
         </script>
 
         <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
-</body>
+
+
+        <!-- build:js scripts/fingerblast.js -->
+        <script src="bower_components/fingerblast/dist/fingerblast.js"></script>
+        <!-- endbuild -->
+        <script>
+          var fingerblast;
+          if (window.ontouchstart === undefined) {
+            fingerblast = new FingerBlast(document.querySelector('body'));
+          }
+        </script>
+    </body>
 </html>

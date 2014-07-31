@@ -1,12 +1,11 @@
 define([
   'marionette',
   'backbone',
-  'fingerblast',
   'controllers/nav',
   'routers/router'
 ],
 
-function (Marionette, Backbone, FingerBlast, NavController, Router) {
+function (Marionette, Backbone, NavController, Router) {
   'use strict';
 
   var fingerBlast;
@@ -20,12 +19,6 @@ function (Marionette, Backbone, FingerBlast, NavController, Router) {
       this.router = new Router({
         controller: new NavController({region: app.layout})
       });
-    });
-
-    app.addInitializer(function () {
-      if (window.ontouchstart === undefined) {
-        fingerBlast = new FingerBlast(document.body);
-      }
     });
 
     app.addInitializer(function () {
